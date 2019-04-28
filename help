@@ -1,0 +1,319 @@
+{
+  "name": "Help",
+  "permissions": "NONE",
+  "restriction": "1",
+  "actions": [
+    {
+      "member": "1",
+      "varName": "",
+      "info": "2",
+      "storage": "1",
+      "varName2": "command.author",
+      "name": "Store Member Info"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "info": "16",
+      "storage": "1",
+      "varName2": "command.author.avatar.url",
+      "name": "Store Member Info"
+    },
+    {
+      "info": "0",
+      "infoIndex": "1",
+      "storage": "1",
+      "varName": "help.module",
+      "name": "Store Command Params"
+    },
+    {
+      "storage": "1",
+      "varName": "help.module",
+      "comparison": "0",
+      "value": "",
+      "iftrue": "2",
+      "iftrueVal": "8",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Check Variable"
+    },
+    {
+      "title": "Invalid Module",
+      "author": "${tempVars(\"command.author\")}",
+      "color": "RANDOM",
+      "timestamp": "false",
+      "url": "",
+      "authorIcon": "${tempVars(\"command.author.avatar.url\")}",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "storage": "1",
+      "varName": "invalid.module.embed",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "invalid.module.embed",
+      "message": "Please select one of the following modules from below.\n=help <module>\n\n**Normal**\n**Fun**\n**Misc**\n\n**Staff** (for staff team only)",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "invalid.module.embed",
+      "channel": "0",
+      "varName2": "",
+      "name": "Send Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "help.module",
+      "comparison": "1",
+      "value": "normal",
+      "iftrue": "2",
+      "iftrueVal": "14",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Check Variable"
+    },
+    {
+      "storage": "1",
+      "varName": "help.module",
+      "comparison": "1",
+      "value": "fun",
+      "iftrue": "2",
+      "iftrueVal": "18",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Check Variable"
+    },
+    {
+      "storage": "1",
+      "varName": "help.module",
+      "comparison": "1",
+      "value": "misc",
+      "iftrue": "2",
+      "iftrueVal": "22",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Check Variable"
+    },
+    {
+      "storage": "1",
+      "varName": "help.module",
+      "comparison": "1",
+      "value": "staff",
+      "iftrue": "2",
+      "iftrueVal": "26",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Check Variable"
+    },
+    {
+      "storage": "1",
+      "varName": "help.module",
+      "comparison": "1",
+      "value": "setup",
+      "iftrue": "2",
+      "iftrueVal": "36",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Check Variable"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "title": "Help - Normal",
+      "author": "${tempVars(\"command.author\")}",
+      "color": "RANDOM",
+      "timestamp": "true",
+      "url": "",
+      "authorIcon": "${tempVars(\"command.author.avatar.url\")}",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "storage": "1",
+      "varName": "help.normal.embed",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "help.normal.embed",
+      "message": "**=agree** | Agree to the server terms & conditions (rules)\n**=help** <module> | Shows the help menu\n**=userinfo** @member | Shows info about the mentioned user\n**=serverinfo** | Shows info about the server\n**=level** | Shows what level you are\n**=new** | Creates a Support Ticket\n**=suggest** <suggestion> | Lets you suggest anything!\n**=warnings** | Displays the amount of warnings you or someone else has!",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "help.normal.embed",
+      "channel": "0",
+      "varName2": "",
+      "name": "Send Embed Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "title": "Help - Fun",
+      "author": "${tempVars(\"command.author\")}",
+      "color": "RANDOM",
+      "timestamp": "true",
+      "url": "",
+      "authorIcon": "${tempVars(\"command.author.avatar.url\")}",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "storage": "1",
+      "varName": "help.fun.embed",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "help.fun.embed",
+      "message": "**=flipcoin** | Flips a coin (text based, for now)\n**=8ball** <question> | Ask the Magic (8ball) a question!\n**=dailycookie** | Gives your Daily Cookie!\n**=cookiejar** | Shows the amount of cookies you've gathered",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "help.fun.embed",
+      "channel": "0",
+      "varName2": "",
+      "name": "Send Embed Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "title": "Help - Misc",
+      "author": "${tempVars(\"command.author\")}",
+      "color": "RANDOM",
+      "timestamp": "true",
+      "url": "",
+      "authorIcon": "${tempVars(\"command.author.avatar.url\")}",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "storage": "1",
+      "varName": "help.misc.embed",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "help.misc.embed",
+      "message": "**=weather** | Displays the weather for the chosen city\n**=pewdssubcount** (in development)\n**=sub2pewds** | Just do it.",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "help.misc.embed",
+      "channel": "0",
+      "varName2": "",
+      "name": "Send Embed Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "info": "1",
+      "find": "Staff",
+      "storage": "1",
+      "varName": "find.role.staff",
+      "name": "Find Role"
+    },
+    {
+      "info": "1",
+      "find": "Trial Staff",
+      "storage": "1",
+      "varName": "find.role.trial.staff",
+      "name": "Find Role"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "role": "3",
+      "varName2": "find.role.staff",
+      "iftrue": "2",
+      "iftrueVal": "32",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Check If Member has Role"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "role": "3",
+      "varName2": "find.role.trial.staff",
+      "iftrue": "2",
+      "iftrueVal": "32",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Check If Member has Role"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "No, not you 😉\nYou must be Staff or Trial Staff to see this!",
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "title": "Help - Staff",
+      "author": "${tempVars(\"command.author\")}",
+      "color": "RANDOM",
+      "timestamp": "true",
+      "url": "",
+      "authorIcon": "${tempVars(\"command.author.avatar.url\")}",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "storage": "1",
+      "varName": "help.staff.embed",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "help.staff.embed",
+      "message": "**=warn @member <# of points> <reason>**\n**=close** | Closes a support ticket\n**=forcekick** @member <reason> | Force kicks a user if the warn command isn't working\n**=forceban** @member <reason> | Force bans a user if the warn command isn't working\n**=unban** @member <reason> | Unbans a user\n**=mute** @member | Mutes a user from voice chat and text channels\n**=unmute** @member | Unmutes a user\n**=nick** @member <new nickname> | Sets a user's nickname\n**=agreeinstructions** | Displays the Server Agreement Instructions\n**=setcookie** @member <cookies> | Only for Bot Owner (Tristen)",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "help.staff.embed",
+      "channel": "0",
+      "varName2": "",
+      "name": "Send Embed Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "title": "Help - Setup",
+      "author": "${tempVars(\"command.author\")}",
+      "color": "RANDOM",
+      "timestamp": "true",
+      "url": "",
+      "authorIcon": "${tempVars(\"command.author.avatar.url\")}",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "storage": "1",
+      "varName": "help.setup.embed",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "help.setup.embed",
+      "message": "**=setupsuggestions** | Sets up the suggestion system\n**=setuptch** | Setup reaction role\n**=rolemenu** | Reaction Role Menu\n**=setupagree** | Sets up the agreement channel(s) and system\n**=setuplevels** | Sets up the level up notification channels",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "help.setup.embed",
+      "channel": "0",
+      "varName2": "",
+      "name": "Send Embed Message"
+    },
+    {
+      "name": "End Action Sequence"
+    }
+  ],
+  "_id": "TcOEX",
+  "comType": "0"
+}
